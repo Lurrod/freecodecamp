@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='index.js'></script>
+</head>
+<body>
+    <section class="box">
+    <h1 id="title">Enquete concernant votre chien</h1>
+    <p id="description">Cette enquete est a titre informatif et anonyme</p>
+    <hr>
+    <section>
+    <form id="survey-form">
+    <section>
+        <label id="name-label" for="name"> Entrez le nom de votre chien :</label>
+        <input required id="name" type="text" placeholder="Nom">
+    </section>
+    <section>
+        <label id="email-label" for="email"> Entrez votre email :</label>
+        <input required id="email" type="email" placeholder="name@example.com">
+    </section>
+    <section>
+        <label id="number-label" for="number">Entrez l'âge de votre chien</label>
+        <input id="number" type="number" placeholder="5" min="0" max="31" pattern="[0-9\s]{10}" title="Veuillez entrer un numéro valide (10 chiffres)">
+    </section>
+    <section>
+        <label id="dropdown-label" for="dropdown">Indiquez la race de votre chien :</label>
+        <select id="dropdown" type="select"> 
+            <option value="option1">Choisisez la race</option>
+            <option value="option2">Akita</option>
+            <option value="option3">Beagle</option>
+            <option value="option4">Berger Allemand</option>
+            <option value="option5">Berger Australien</option>
+            <option value="option6">Bouledogue</option>
+            <option value="option7">Border Collie</option>
+            <option value="option8">Caniche</option>
+            <option value="option9">Husky</option>
+            <option value="option10">Lévrier</option>
+            <option value="option11">Patou</option>
+        </select>
+    </section>
+    <section>
+    <fieldset class="radio-fieldset">
+        <legend>Est ce que votre chien est stérilisé :</legend>
+        <label id="radio">Oui</label>
+        <input id="radio" type="radio" value="oui" name="radio-1">
+        <label id="radio">Non</label>
+        <input id="radio" type="radio" value="non" name="radio-1">
+    </fieldset>
+    </section>
+    <section>
+        <fieldset class="checkbox-fieldset">
+            <legend>pas d'idée</legend>
+        <label id="checkbox">1</label>
+        <input id="checkbox" type="checkbox" value="1">
+        <label id="checkbox">2</label>
+        <input id="checkbox" type="checkbox" value="2">
+        <label id="checkbox">3</label>
+        <input id="checkbox" type="checkbox" value="3">
+        <label id="checkbox">4</label>
+        <input id="checkbox" type="checkbox" value="4">
+        <label id="checkbox">5</label>
+        <input id="checkbox" type="checkbox" value="5">
+    </fieldset>
+    </section>
+    <section>
+        <label for="submit">Commentaires :</label>
+        <textarea id="survey-form">Commentaires</textarea>
+    </section>
+    <section>
+        <button id="submit">Envoyer</button>
+    </section>
+    </form>
+</section>
+</body>
+</html>

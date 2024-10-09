@@ -1,0 +1,63 @@
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+#description{
+    font-style: italic;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+hr{
+
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 70%;
+    border-color: #133d58;
+}
+
+body{
+    background-color:#133d58;
+    padding: 20px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #133d58;
+}
+
+.box{
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+input, select, textarea{
+    border-radius: 7px;
+    border-color: #133d58;
+}
+
+section{
+    padding: 20px;
+}
+
+fieldset{
+    margin-left: 22.5%;
+    width: 50%;
+    border-radius: 10px;
+    border-color: #133d58;
+}
+
+#submit{
+    border-radius: 7px;
+    border: 2px solid #133d58;
+    background-color: aliceblue;
+}
+
+#submit:hover{
+    background-color: #133d58;
+    border-color: aliceblue;
+    color: aliceblue;
+}

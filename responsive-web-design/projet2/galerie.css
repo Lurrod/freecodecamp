@@ -1,0 +1,77 @@
+/* couleur :
+#1e3d59 bleu
+#f5f0e1 beige
+#ff6e40 orange
+#ffc13b jaune
+*/
+
+body{
+    background-color: #f5f0e1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e3d59;
+    color: #ffc13b; 
+    width: 100%;
+}
+
+.titre{
+    justify-content: flex-start;
+    margin: auto 0;
+    padding-left: 40px;
+    color: #ffc13b;
+}
+
+ol{
+    list-style: none;
+    padding: 20px;
+}
+
+li{
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:visited{
+    color: #ffc13b;
+}
+
+.sous-titre{
+    font-size: 20px;
+    text-align: center;
+    color: #ffc13b;
+}
+
+.gallerie {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+  
+.gallerie img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+.gallerie::after {
+    content: "";
+    width: 350px;
+}

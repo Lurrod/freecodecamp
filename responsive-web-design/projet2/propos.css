@@ -1,0 +1,81 @@
+/* couleur :
+#1e3d59 bleu
+#f5f0e1 beige
+#ff6e40 orange
+#ffc13b jaune
+*/
+
+body{
+    background-color: #f5f0e1;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e3d59;
+    color: #ffc13b; 
+    width: 100%;
+}
+
+.titre{
+    justify-content: flex-start;
+    margin: auto 0;
+    padding-left: 40px;
+    color: #ffc13b;
+}
+
+ol{
+    list-style: none;
+    padding: 20px;
+}
+
+li{
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:visited{
+    color: #ffc13b;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.presentation, .personalite, .vision {
+    margin-bottom: 40px;
+}
+
+h2, h3 {
+    color: #ff6e40;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ol {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}

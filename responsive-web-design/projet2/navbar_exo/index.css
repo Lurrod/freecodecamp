@@ -6,8 +6,18 @@
     
 }
 
+
+
+
+.edu-au-vic-wa-nt-guides-test {
+  font-family: "Edu AU VIC WA NT Guides", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: "Edu AU VIC WA NT Guides" ;
     background-color: var(--colorback);
     color: var(--textcolor);
 }

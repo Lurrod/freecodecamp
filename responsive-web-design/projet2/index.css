@@ -6,7 +6,11 @@ body {
     background-color: #f5f0e1;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
-    cursor: URL('curseur.svg'), default;
+    cursor: url('curseur_noir.svg'), default;
+}
+
+.item1, .item2, header{
+    cursor: url('curseur_blanc.svg'), default; /* Le curseur noir */
 }
 
 header {

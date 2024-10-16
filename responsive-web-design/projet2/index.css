@@ -10,7 +10,7 @@ body {
 }
 
 .item1, .item2, header{
-    cursor: url('curseur_blanc.svg'), default; /* Le curseur noir */
+    cursor: url('curseur_blanc.svg'), default;
 }
 
 header {

@@ -278,3 +278,37 @@ h3{
   font-size: 1.2rem;
   text-align: center;
 }
+
+/* Modes de jeux */
+
+.mode {
+  background-color: #0f1923;
+  border: 2px solid #ff4655;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s;
+}
+
+.mode:hover {
+  transform: scale(1.03);
+}
+
+.mode h3 {
+  font-family: valorant;
+  color: #ff4655;
+  font-size: 1.6rem;
+  margin: 0 0 10px 0;
+}
+
+.mode p {
+  color: #ece8e0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+p {
+  padding: 10px;
+  transition: color 0.3s;
+}

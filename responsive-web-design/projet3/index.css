@@ -9,6 +9,10 @@ beige : #ece8e0
   src: url("Valorant.ttf");
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #0f1923;
   margin: 0;
@@ -39,6 +43,7 @@ nav a {
   margin-left: 70px;
   transition: transform 0.4s;
   transform-origin: center;
+  margin-bottom: 50px;
 }
 
 a:visited {

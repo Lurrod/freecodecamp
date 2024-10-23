@@ -78,6 +78,10 @@ h1 {
   font-family: valorant;
 }
 
+abbr {
+  color: #c09e73;
+}
+
 p {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 16px;

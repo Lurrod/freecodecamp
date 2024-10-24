@@ -17,3 +17,10 @@ projet4 - Objective: Build an app that is functionally similar to (https://produ
 
 projet5 - Objective: Build an app that is functionally similar to (https://personal-portfolio.freecodecamp.rocks).
 
+
+### How to download :
+
+'''
+
+git clone https://github.com/Lurrod/freecodecamp.git
+'''

@@ -3,6 +3,10 @@
 
 ## This folder contains all my exercises allowing me to pass my FreeCodeCamp certification.
 
+
+### Content of each folder :
+
+
 projet1 - Objective: Build an app that is functionally similar to (https://survey-form.freecodecamp.rocks).
 
 projet2 - Objective: Build an app that is functionally similar to (https://tribute-page.freecodecamp.rocks).

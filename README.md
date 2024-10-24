@@ -25,3 +25,7 @@ Copy the following command in a shell :
 ```
 git clone https://github.com/Lurrod/freecodecamp.git
 ```
+
+### Contact :
+
+For any specific questions, feel free to send an email to : [borde.titouan.47@gmail.com](mailto:borde.titouan.47@gmail.com)

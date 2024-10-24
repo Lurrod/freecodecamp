@@ -20,6 +20,8 @@ projet5 - Objective: Build an app that is functionally similar to (https://perso
 
 ### How to download :
 
+Copy the following command in a shell :
+
 ```
 git clone https://github.com/Lurrod/freecodecamp.git
 ```

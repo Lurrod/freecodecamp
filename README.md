@@ -1,3 +1,4 @@
 # freecodecamp
 
-Ce dossier contient tous mes exercices me permettant de passer ma certification FreeCodeCamp.
+
+This folder contains all my exercises allowing me to pass my FreeCodeCamp certification.

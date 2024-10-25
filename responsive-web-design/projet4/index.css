@@ -13,14 +13,28 @@ body {
 }
 
 header {
-    background-color: #4A90E2;
+    position: relative;
     height: 100vh;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px) sepia(0.47);
+    z-index: -1;
 }
 
 nav {
@@ -30,7 +44,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -59,7 +73,31 @@ section {
 }
 
 #about {
-    background-color: #fff;
+    background-color: #4A90E2;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white; /* Couleur de l'en-tête */
+}
+
+#about p {
+    margin-bottom: 20px;
+    font-size: 1.2rem; /* Taille de police augmentée */
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about li {
+    margin: 10px 0;
+    font-size: 1.1rem; /* Taille de police pour les listes */
 }
 
 #offers {
@@ -124,11 +162,30 @@ section {
     height: auto;
     display: none;
     object-fit: cover;
+    transition: transform 0.5s ease; /* Ajout de la transition */
 }
 
 .carousel-images img.active {
     display: block; 
+    transform: translateX(0); /* Position initiale */
 }
+
+.carousel-images img.next,
+.carousel-images img.prev {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-images img.next {
+    transform: translateX(100%); /* Décalage à droite */
+}
+
+.carousel-images img.prev {
+    transform: translateX(-100%); /* Décalage à gauche */
+}
+
 
 .carousel-button {
     position: absolute;
@@ -148,11 +205,11 @@ section {
 }
 
 .carousel-button.prev {
-    left: 10px;
+    left: 2px;
 }
 
 .carousel-button.next {
-    right: 10px;
+    right: 2px;
 }
 
 .carousel-button:hover {

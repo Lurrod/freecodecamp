@@ -58,13 +58,13 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.hero h1 {
+.background h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
-.hero p {
+.background p {
     font-size: 1.3rem;
     margin-top: 10px;
 }
@@ -285,9 +285,4 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-}
-
-footer a {
-    color: #FFD700;
-    text-decoration: none;
 }

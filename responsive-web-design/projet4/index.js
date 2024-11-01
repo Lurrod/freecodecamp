@@ -7,7 +7,7 @@ carousels.forEach((carousel, index) => {
     function moveCarousel(direction) {
         const images = carousel.querySelectorAll('.carousel-images img');
         images[currentIndex].classList.remove('active');
-
+  
         currentIndex += direction;
 
         if (currentIndex < 0) {

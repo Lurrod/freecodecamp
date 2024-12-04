@@ -10,7 +10,6 @@
     --skill-js: #ffd54f;
     --contact-bg: #fe908b;
 }
-
 .light-theme {
     --background-color: #f5f5f5;
     --text-color: #333333;
@@ -22,7 +21,6 @@
     --skill-js: #81C784;  /* Vert pour JavaScript */
     --contact-bg: #cae1d1;
 }
-
 /* Styles globaux */
 * {
     margin: 0;
@@ -30,15 +28,20 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
     overflow-x: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /* Sidebar */
@@ -56,27 +59,22 @@ body {
     background-color: var(--sidebar-bg);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
 .sidebar ul {
     list-style: none;
 }
-
 .sidebar ul li {
     margin: 20px 0;
     text-align: center;
 }
-
 .sidebar ul li a {
     color: var(--text-color);
     font-size: 1.2em;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
 .sidebar ul li a:hover {
     color: var(--accent-color);
     cursor: pointer;
 }
-
 /* Bouton de changement de thème */
 .theme-toggle {
     position: fixed;
@@ -84,7 +82,6 @@ body {
     right: 20px;
     z-index: 10;
 }
-
 .theme-toggle button {
     background: var(--accent-color);
     color: var(--text-color);
@@ -94,24 +91,26 @@ body {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .theme-toggle button:hover {
     background: var(--text-color);
     color: var(--accent-color);
 }
-
 /* Sections principales */
 .main-content {
     margin-left: 80px;
     padding: 20px;
 }
-
 /* Agrandir et animer le texte "Bienvenue" */
 .accueil-heading {
-    font-size: 10em !important;
+    font-size: 8em !important;
     animation: zoomIn 1.5s ease-in-out forwards;
     color: var(--accent-color);
     text-transform: uppercase;
+}
+
+.header-h3{
+    font-size: 2em;
+    animation: zoomIn 1.5s ease-in-out forwards;
 }
 
 /* Animation de zoom */
@@ -124,19 +123,6 @@ body {
         transform: scale(1);
         opacity: 1;
     }
-}
-
-
-.block{
-    position: absolute;
-    width: 50px;
-    height: 100px;
-    background: var(-);
-    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
-    right: 50%;
-    top: 50%;
-    z-index: -1;
-    border-radius: 50px;
 }
 
 .section {
@@ -168,24 +154,54 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
     justify-content: center;
     margin-top: 20px;
+    padding: 20px;
 }
 
+/* Carte de projet agrandie */
 .project-card {
     position: relative;
-    width: 30;
+    width: 45%;
+    height: 400px;
     background-color: var(--card-bg);
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     overflow: hidden;
 }
 
-.project-card.hovered .content {
+.project-card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+.project-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1s ease;
+}
+
+/* Montrer l'iframe au survol */
+.project-card:hover .content {
     opacity: 0;
 }
+
+.project-card:hover .project-iframe {
+    opacity: 1;
+}
+
 
 /* Compétences */
 .skills {
@@ -193,7 +209,6 @@ body {
     width: 80%;
     max-width: 600px;
 }
-
 .skill-bar {
     background-color: var(--card-bg);
     border-radius: 5px;
@@ -202,38 +217,32 @@ body {
     margin: 15px 0;
     width: 100%;
 }
-
 .skill-level {
     height: 12px;
     border-radius: 5px;
     width: 0;
     transition: width 1.5s ease;
 }
-
 .skill-level.html.visible { width: 75%; background-color: var(--skill-html); }
 .skill-level.css.visible { width: 65%; background-color: var(--skill-css); }
 .skill-level.js.visible { width: 15%; background-color: var(--skill-js); }
-
 /* Section Contact */
 #contact {
     padding: 40px;
     color: var(--text-color);
     text-align: center;
 }
-
 /* En-tête de la section contact */
 #contact h2 {
     font-size: 2em;
     color: var(--accent-color);
     margin-bottom: 10px;
 }
-
 #contact p {
     font-size: 1.1em;
     margin-bottom: 30px;
     color: var(--text-color);
 }
-
 /* Formulaire de Contact */
 .contact-form {
     max-width: 600px;
@@ -245,24 +254,20 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .contact-form:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .contact-form label {
     font-size: 1em;
     color: var(--text-color);
     display: block;
     text-align: left;
 }
-
 .input-container {
     position: relative;
     width: 100%;
 }
-
 .fa-user-circle, .fa-at{
     position: absolute;
     left: 10px;
@@ -270,7 +275,6 @@ body {
     transform: translateY(-50%);
     color: var(--text-color);
 }
-
 .fa-paper-plane{    
     position: absolute;
     top: 27%;
@@ -278,7 +282,6 @@ body {
     transform: translateY(-50%);
     color: var(--text-color);
 }
-
 .contact-form input,
 .contact-form textarea {
     background-color: var(--contact-bg);
@@ -293,19 +296,16 @@ body {
     transition: border 0.3s, box-shadow 0.3s;
     margin-bottom: 15px;
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: var(--accent-color);
     box-shadow: 0px 0px 5px var(--text-color);
 }
-
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: var(--text-color);
     opacity: 0.7;
 }
-
 /* Bouton Envoyer */
 .contact-form button {
     background-color: var(--accent-color);
@@ -319,7 +319,6 @@ body {
     width: 100%;
     max-width: 600px;
 }
-
 .contact-form button:hover {
     background-color: #ff607d; /* Slightly darker shade */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

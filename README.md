@@ -20,7 +20,7 @@ projet5 - Objective: Build an app that is functionally similar to (https://perso
 
 ### Content of each folder (javascript-algorithms-and-data-structures):
 
-
+projet1 - Objective: Build an app that is functionally similar to https://palindrome-checker.freecodecamp.rocks.
 
 ### How to download :
 

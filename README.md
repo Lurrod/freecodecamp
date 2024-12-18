@@ -18,6 +18,10 @@ projet4 - Objective: Build an app that is functionally similar to (https://produ
 projet5 - Objective: Build an app that is functionally similar to (https://personal-portfolio.freecodecamp.rocks).
 
 
+### Content of each folder (javascript-algorithms-and-data-structures):
+
+
+
 ### How to download :
 
 Copy the following command in a shell :

@@ -4,7 +4,7 @@
 ## This folder contains all my exercises allowing me to pass my FreeCodeCamp certification.
 
 
-### Content of each folder :
+### Content of each folder (responsive-web-design):
 
 
 projet1 - Objective: Build an app that is functionally similar to (https://survey-form.freecodecamp.rocks).

@@ -4,7 +4,7 @@
 ## This folder contains all my exercises allowing me to pass my FreeCodeCamp certification.
 
 
-### Content of each folder :
+### Content of each folder (responsive-web-design):
 
 
 projet1 - Objective: Build an app that is functionally similar to (https://survey-form.freecodecamp.rocks).
@@ -17,6 +17,10 @@ projet4 - Objective: Build an app that is functionally similar to (https://produ
 
 projet5 - Objective: Build an app that is functionally similar to (https://personal-portfolio.freecodecamp.rocks).
 
+
+### Content of each folder (javascript-algorithms-and-data-structures):
+
+projet1 - Objective: Build an app that is functionally similar to https://palindrome-checker.freecodecamp.rocks.
 
 ### How to download :
 

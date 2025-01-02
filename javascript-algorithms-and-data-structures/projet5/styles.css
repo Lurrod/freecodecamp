@@ -1,0 +1,234 @@
+body {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    background-color: rgba(183, 28, 28, 0.9);
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid #ffcc00;
+  }
+  
+  #search-area {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(183, 28, 28, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  #search-area:hover {
+    transform: translateY(-2px);
+  }
+  
+  #search-input {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #ffcc00;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  #search-input:focus {
+    box-shadow: 0 0 8px #ffcc00;
+  }
+  
+  #search-button {
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  #search-button:hover {
+    background-color: #ffeb3b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #pokedex {
+    margin: 30px auto;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  #pokedex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #pokemon-name {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #pokemon-id {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  #sprite {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    transition: opacity 0.3s ease;
+  }
+  
+  #types {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  #types p {
+    padding: 8px 20px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  #types p:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat {
+    margin: 15px 0;
+  }
+  
+  .stat-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .stat-bar {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .stat-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50 0%, #45a049 100%);
+    transition: width 0.8s ease-out;
+  }
+  
+  .stat-value {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .error-message {
+    background-color: #ff5252;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #loading-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .spinner {
+    text-align: center;
+  }
+  
+  .pokeball {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+  }
+  
+  .pokeball::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background-color: #ff1744;
+    border-radius: 30px 30px 0 0;
+    top: 0;
+  }
+  
+  .pokeball::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+    border: 4px solid #333;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #footer {
+    text-align: center;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    #search-area {
+      width: 95%;
+      padding: 15px;
+    }
+    
+    #search-input {
+      width: 60%;
+    }
+    
+    #pokedex {
+      width: 95%;
+      padding: 20px;
+    }
+  }

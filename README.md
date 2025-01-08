@@ -22,6 +22,14 @@ projet5 - Objective: Build an app that is functionally similar to (https://perso
 
 projet1 - Objective: Build an app that is functionally similar to https://palindrome-checker.freecodecamp.rocks.
 
+projet2 - Objective: Build an app that is functionally similar to https://roman-numeral-converter.freecodecamp.rocks.
+
+projet3 - Objective: Build an app that is functionally similar to https://telephone-number-validator.freecodecamp.rocks.
+
+projet4 - Objective: Build an app that is functionally similar to https://cash-register.freecodecamp.rocks.
+
+projet5 - Objective: Build an app that is functionally similar to https://pokemon-search-app.freecodecamp.rocks.
+
 ### How to download :
 
 Copy the following command in a shell :
